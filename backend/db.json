@@ -1,0 +1,19 @@
+{
+  "templates": [
+    { "id": 1, "title": "Submit Expense Report", "date": "2026-11-18", "startTime": "09:00", "endTime": "10:00", "category": "Work", "priority": "High" },
+    { "id": 2, "title": "Call ISP Support", "date": "2026-11-18", "startTime": "10:30", "endTime": "11:00", "category": "Personal", "priority": "Medium" },
+    { "id": 3, "title": "Read Chapter 4", "date": "2026-11-18", "startTime": "11:00", "endTime": "12:30", "category": "Study", "priority": "Medium" },
+    
+    { "id": 4, "title": "Morning Standup", "date": "2026-11-19", "startTime": "09:30", "endTime": "10:00", "category": "Work", "priority": "High" },
+    { "id": 5, "title": "Write Unit Tests", "date": "2026-11-19", "startTime": "10:00", "endTime": "12:00", "category": "Work", "priority": "Medium" },
+    { "id": 6, "title": "Lunch with Mentor", "date": "2026-11-19", "startTime": "12:30", "endTime": "13:30", "category": "Work", "priority": "Low" },
+    
+    { "id": 7, "title": "Design Review", "date": "2026-11-20", "startTime": "10:00", "endTime": "11:00", "category": "Work", "priority": "High" },
+    { "id": 8, "title": "Update Documentation", "date": "2026-11-20", "startTime": "11:00", "endTime": "12:30", "category": "Work", "priority": "Medium" },
+    { "id": 9, "title": "Pick up Package", "date": "2026-11-20", "startTime": "13:00", "endTime": "13:30", "category": "Personal", "priority": "Low" },
+    
+    { "id": 10, "title": "Dentist Appointment", "date": "2026-11-21", "startTime": "09:00", "endTime": "10:00", "category": "Personal", "priority": "High" },
+    { "id": 11, "title": "Weekend Hackathon", "date": "2026-11-21", "startTime": "10:00", "endTime": "18:00", "category": "Work", "priority": "Medium" },
+    { "id": 12, "title": "Study Group", "date": "2026-11-22", "startTime": "14:00", "endTime": "16:00", "category": "Study", "priority": "Medium" }
+  ]
+}

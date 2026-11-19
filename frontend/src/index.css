@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-app: #0f1220;
+  --color-panel: rgb(22 27 40 / 0.72);
+  --color-surface: rgb(24 30 44 / 0.7);
+  --color-raised: rgb(32 40 60 / 0.75);
+
+  --animate-slide-in-up: slideInUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-drift-a: driftA 24s ease-in-out infinite alternate;
+  --animate-drift-b: driftB 30s ease-in-out infinite alternate;
+  --animate-drift-c: driftC 27s ease-in-out infinite alternate;
+  --animate-page-in: pageIn 0.3s ease-out;
+
+  @keyframes pageIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes driftA {
+    from {
+      transform: translate(0, 0) scale(1);
+    }
+
+    to {
+      transform: translate(120px, 80px) scale(1.15);
+    }
+  }
+
+  @keyframes driftB {
+    from {
+      transform: translate(0, 0) scale(1.1);
+    }
+
+    to {
+      transform: translate(-140px, 60px) scale(0.95);
+    }
+  }
+
+  @keyframes driftC {
+    from {
+      transform: translate(0, 0) scale(1);
+    }
+
+    to {
+      transform: translate(-80px, -120px) scale(1.2);
+    }
+  }
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-app);
+  color: #f1f5f9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .animate-drift-a,
+  .animate-drift-b,
+  .animate-drift-c {
+    animation: none;
+  }
+}
+
+body.modal-open .animate-drift-a,
+body.modal-open .animate-drift-b,
+body.modal-open .animate-drift-c {
+  animation-play-state: paused;
+}

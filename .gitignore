@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Environment variables (contains your Gmail app password!)
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+dist-ssr/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor and OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
